@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 
-import diaryRouter from './routes/diaries'
+import diaryRouter from './routes/translate'
 
 const app = express()
 app.use(express.json())
@@ -16,7 +16,7 @@ app.get('/ping', (_req, res) => {
     res.send('pongsex')
 })
 
-app.use('/api/diaries', diaryRouter)
+app.use('/api', diaryRouter)
 
 app.listen(PORT, () => {
     console.log('funca')

@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "deepl-node": "^1.12.0",
     "dotenv": "^16.4.5",
     "express": "4.18.3"
   },
@@ -29,9 +30,14 @@
     "parserOptions": {
       "project": "./tsconfig.json"
     },
-    "extends": ["./node_modules/ts-standard/eslintrc.json"],
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ],
     "rules": {
-      "@typescript-eslint/indent": ["error", 4]
+      "@typescript-eslint/indent": [
+        "error",
+        4
+      ]
     }
   }
 }
